@@ -53,8 +53,8 @@ Finished the KiCad schematic and wired the full prototype.It’s working, but th
 
 
 ## Hardware
-
-
+ ![Side view](./poza_parte.webp)
+ ![Top view](./poza_sus.webp)
 ### Schematics
 
  ![KiCad Schematics](./kicad.webp)
