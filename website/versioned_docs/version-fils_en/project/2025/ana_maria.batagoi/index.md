@@ -57,7 +57,7 @@ Finished the KiCad schematic and wired the full prototype.It’s working, but th
 
 ### Schematics
 
- ![KiCad Schematics](./blink_and_recall.kicad_sch)
+ ![KiCad Schematics](./kicad.webp)
 
 ### Bill of Materials
 
