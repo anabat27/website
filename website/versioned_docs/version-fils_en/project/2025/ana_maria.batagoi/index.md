@@ -57,7 +57,7 @@ Finished the KiCad schematic and wired the full prototype.It’s working, but th
  ![Top view](./poza_sus.webp)
 ### Schematics
 
- ![KiCad Schematics](./kicad.webp)
+ ![KiCad Schematics](./kicad.svg)
 
 ### Bill of Materials
 
