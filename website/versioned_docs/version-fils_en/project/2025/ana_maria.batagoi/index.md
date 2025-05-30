@@ -50,11 +50,12 @@ Project planning, hardware selection, initial tests with LEDs and buttons.
 Finished the KiCad schematic and wired the full prototype.It’s working, but the wiring is a bit messy right now — I’m planning to clean it up next.
 
 ### Week 19 - 25 May
-
+Finished the full project, added the prototype into a box so it looks nice.
 
 ## Hardware
  ![Side view](./poza_parte.webp)
  ![Top view](./poza_sus.webp)
+ 
 ### Schematics
 
  ![KiCad Schematics](./kicad.svg)
@@ -80,7 +81,7 @@ The format is
 | [YELLOW Led](https://www.farnell.com/datasheets/1660999.pdf) | Creates the pattern.  | [0.39 RON](https://www.optimusdigital.ro/ro/optoelectronice-led-uri/37-led-galben.html?search_query=LED+albastru&results=64) |
 | [Buttons](https://www.electronicwings.com/components/pushbutton-switch-6-pin/1/datasheet) | The buttons | [1.5 RON](https://www.optimusdigital.ro/ro/butoane-i-comutatoare/1119-buton-6x6x6.html?search_query=BUTOANE&results=190) |
 | [Buzzer](https://www.farnell.com/datasheets/2171929.pdf) | The buzzer | [1.4 RON](https://www.optimusdigital.ro/ro/audio-buzzere/633-buzzer-activ-de-5-v.html?search_query=BUzzer&results=61) |
-| [LCD](https://www.farnell.com/datasheets/58820.pdf) | | [15 RON](https://www.optimusdigital.ro/ro/optoelectronice-lcd-uri/62-lcd-1602-cu-interfata-i2c-si-backlight-galben-verde.html?search_query=lcd&results=218) |
+| [LCD](https://www.farnell.com/datasheets/58820.pdf) |User interface display | [15 RON](https://www.optimusdigital.ro/ro/optoelectronice-lcd-uri/62-lcd-1602-cu-interfata-i2c-si-backlight-galben-verde.html?search_query=lcd&results=218) |
 | [Breadboard](https://components101.com/sites/default/files/component_datasheet/Breadboard%20Datasheet.pdf) | For assembling the prototype | [5 RON](https://www.optimusdigital.ro/ro/prototipare-breadboard-uri/44-breadboard-400-points.html?search_query=BREADBORD&results=4) |
 | [Female-to-Male Wires](https://www.tubesandmore.com/sites/default/files/associated_files/s-w604_spec.pdf) | For connections | [8 RON](https://www.optimusdigital.ro/ro/toate-produsele/877-set-fire-mama-tata-40p-15-cm.html?search_query=FIRE&results=429) |
 | [Female-to-Female Wires](https://www.tubesandmore.com/sites/default/files/associated_files/s-w604_spec.pdf) | For connections | [7 RON](https://www.optimusdigital.ro/ro/fire-fire-mufate/881-set-fire-mama-mama-40p-15-cm.html?search_query=FIRE&results=429) |
@@ -91,9 +92,9 @@ The format is
 
 | Library | Description | Usage |
 |---------|-------------|-------|
-|[rp2040-hal](https://github.com/rp-rs/rp-hal)|Hardware Control|Controls RP2040 hardware|
-|[embedded-hal](https://github.com/rust-embedded/embedded-hal)|Hardware Abstraction |Common hardware driver traits|
-|[hd44780-driver](https://github.com/JohnDoneth/hd44780-driver)|LCD Display |Drives LCD character display|
+|[embassy-executor](https://github.com/embassy-rs/embassy)|Async Runtime|Runs non-blocking tasks ( delays, game loop) on the RP2040|
+|[embassy-rp](https://github.com/embassy-rs/embassy)|Hardware Support |Access to Pico W GPIO, ADC, I2C, USB, etc.|
+|[embassy-time](https://github.com/embassy-rs/embassy)|Timing Control |Provides Timer::after() and Delay for accurate delays|
 |[rand](https://github.com/rust-random/rand)|Sequence Randomizer |Generates random number sequences|
 
 ## Links
